@@ -1,0 +1,33 @@
+prompt const = require (`prompt-sync`) ();
+
+let qtdrodadas = prompt ("Quantas rodadas você quer jogar?");
+
+deixe qtdjogadores = + prompt ("Serão quantos jogadores?");
+
+console.log (`O jogo terá $ {qtdrodadas} rodadas, e $ {qtdjogadores} jogadores!`);
+
+para (deixe i = 0; i <qtdrodadas; i ++) {
+
+    deixe jogador = {
+
+    nome: prompt ('Digite seu nome!'),
+    numero: function getRandomIntInclusive (min, max) {
+        min = Math.ceil (1);
+        max = Math.floor (6);
+        return Math.floor (Math.random () * (6 - 1)) + 1;
+      }
+
+    }
+    console.log ('jogador.nome');
+}
+
+var lista = [];
+lista.push (prompt (`jogador.nome`));
+lista.push (prompt ('Digite algo!'));
+lista.push (prompt ('Digite algo!'));
+console.log (lista);
+
+lista.sort (função (a, b) {
+
+    return a.numero - b.numero
+});
